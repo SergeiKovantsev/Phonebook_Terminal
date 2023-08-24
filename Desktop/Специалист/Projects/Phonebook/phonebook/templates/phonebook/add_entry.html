@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Добавить запись</title>
+</head>
+<body>
+    <h1>Добавить запись</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="surname">Фамилия:</label>
+        <input type="text" id="surname" name="surname" required><br>
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="patronymic">Отчество:</label>
+        <input type="text" id="patronymic" name="patronymic"><br>
+        <label for="organization">Организация:</label>
+        <input type="text" id="organization" name="organization"><br>
+        <label for="work_phone">Телефон рабочий:</label>
+        <input type="text" id="work_phone" name="work_phone"><br>
+        <label for="personal_phone">Телефон личный (сотовый):</label>
+        <input type="text" id="personal_phone" name="personal_phone"><br>
+        <input type="submit" value="Добавить">
+    </form>
+    <a href="{% url 'index' %}">Назад</a>
+</body>
+</html>

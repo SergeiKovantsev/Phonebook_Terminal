@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Подробности записи</title>
+</head>
+<body>
+    <h1>Подробности записи</h1>
+    <p><strong>Фамилия:</strong> {{ entry.surname }}</p>
+    <p><strong>Имя:</strong> {{ entry.name }}</p>
+    <p><strong>Отчество:</strong> {{ entry.patronymic }}</p>
+    <p><strong>Организация:</strong> {{ entry.organization }}</p>
+    <p><strong>Телефон рабочий:</strong> {{ entry.work_phone }}</p>
+    <p><strong>Телефон личный (сотовый):</strong> {{ entry.personal_phone }}</p>
+    <a href="{% url 'index' %}">Назад</a>
+    <a href="{% url 'edit_entry' entry.id %}">Редактировать</a>
+</body>
+</html>

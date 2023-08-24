@@ -1,0 +1,13 @@
+<!-- base.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phonebook</title>
+</head>
+<body>
+    <h1>Phonebook</h1>
+    <a href="{% url 'index' %}">Главная</a>
+    <br><br>
+    {% block content %}{% endblock %}
+</body>
+</html>
